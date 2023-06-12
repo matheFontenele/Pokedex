@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicons/favicon-16x16.png">
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <script src="./js/index.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <!--Container principal-->
+        <section id="containerHome">
+        <div class="headerDiv">
+            <form>
+            <input type="search" placeholder="Buscar Pokemon" ><i class="bi bi-search"></i>
+            </form id="form-search">
+            <div class="filterDiv">
+                <button class="btnFilter" id="select-type"><p>Selecionar Tipo <i id="search-icon" class="bi bi-chevron-down"></i></p></button>
+                <button class="btnFilter" id="filter-mode"><p>Por Menor Numero <i class="bi bi-funnel"></i></p></button>
+            </div>
+        </div>
+            <div id="pokeContainer" class="PokemonAll">
+            </div>
+        </section>
+
+        <!--Container de seleção de tipos-->
+        <section id="containerTypes" class="hide">
+            <ul class="btnType">
+                <button id="all-type">Selecionar Tipo</button>
+                <button id="dart-type">Dark</button>
+                <button id="dragon-type">Dragon</button>
+                <button id="fire-type">Fire</button>
+                <button id="fly-type">Fly</button>
+                <button id="ghost-type">Ghost</button>
+                <button id="insect-type">Insect</button>
+                <button id="figthr-type">Figther</button>
+                <button id="metal-type">Metal</button>
+                <button id="normal-type">Normal</button>
+                <button id="plant-type">Plant</button>
+                <button id="poison-type">Poison</button>
+                <button id="psiquic-type">Pisiquic</button>
+                <button id="rock-type">Rock</button>
+                <button id="shine-type">Shine</button>
+                <button id="earth-type">Earth</button>
+                <button id="thunder-type">Thunder</button>
+                <button id="water-type">Water</button>
+            </ul>
+            <div class="returnDiv" id="return-btn1">
+                <button class="btnReturn">Voltar</button>
+            </div>
+        </section>
+
+        <!--Container de filtro-->
+        <section id="containerFilter" class="hide">
+            <ul class="btnType">
+                <button>Maior Numero</button>
+                <button>Menor Numero</button>
+                <button>A a Z</button>
+                <button>Z a A</button>
+            </ul>
+            <div class="returnDiv" id="return-btn2">
+                <button class="btnReturn">Voltar</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

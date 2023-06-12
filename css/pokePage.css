@@ -1,0 +1,66 @@
+/*CSS do header*/
+.headerMenu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.headerMenu i{
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+.headerMenu i:hover{
+    border: solid 1px rgb(122, 121, 121);
+}
+
+/*CSS dos detalhes do pokemon*/
+.perfilPoke{
+    background-image: url("/img/pokedex.png");
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.perfilPoke img{
+    width: 16rem;
+    height: 10rem;
+    padding: 0 5rem;
+    border-radius: 20px;
+}
+
+.typesDetails{
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconTypes{
+    margin-top: 2rem;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 15px 30px;
+}
+
+.iconTypes img{
+    width: 3rem;
+    height: 3rem;
+}
+
+/*CSS de detalhes do pokemon*/
+.detalsPokemon{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid rgb(167, 167, 167);
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+.detalsPokemon div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 5px;
+}
+
+.detaisMore div{
+    display: flex;
+    flex-direction: column;
+}
