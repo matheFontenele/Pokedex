@@ -94,6 +94,7 @@ form i{
 .btnType{
     display: flex;
     flex-direction: column;
+    min-width: 270px;
 }
 
 .btnType button{
@@ -126,4 +127,8 @@ form i{
 
 .btnReturn:hover{
     opacity: 1;
+}
+
+#containerTypes{
+    min-width: 270px;
 }

@@ -12,7 +12,7 @@ const formSearch = document.querySelector('#form-search');
 const returnBtn1 = document.querySelector('#return-btn1');
 const returnBtn2 = document.querySelector('#return-btn2');
 
-const pokemonNumbers = 150;
+const pokemonNumbers = 10;
 
 /*Lista de cores*/
 const colors = {
@@ -68,7 +68,10 @@ const getPokemons = async (pokemon) => {
     const resp = await fetch(url);
     const data = await resp.json();
     newPokemon(data)
+    console.log(data)
 }
+
+
 
 /*Função para criar novos pokemons no HTML*/
 const newPokemon = (poke) =>{
@@ -95,24 +98,6 @@ const newPokemon = (poke) =>{
     pokeContainer.appendChild(card)
 }
 
-
-/*Função para consumir API de Pokemons
-const getPokemons = async (pokemon) => {
-    const urlGet = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
-    const data = await urlGet.json();
-    return(data);
-}/*
-
-/*Função para utilizar os dados consumidos do API
-const showPokemon = async (pokemon) => {
-    const data = await getPokemons(pokemon);
-    pokemonNumber.innerHTML = `Nº 0${data.id}`;
-    pokemonName.innerHTML = data.name;
-    pokemonimg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-    
-}/*
-
-
 /*Função e evento para ocultar e exibir containers*/
 function showMenu1() {
     Home.classList.toggle('hide');
@@ -130,13 +115,12 @@ btnTypeSelect.addEventListener('click', () => {
 btnFilterMode.addEventListener('click', () => {
     showMenu2();
 });
-
 returnBtn1.addEventListener('click', () => {
     showMenu1();
 });
-
 returnBtn2.addEventListener('click', () => {
     showMenu2();
 });
+
 
 fetchPokemons();
